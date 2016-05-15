@@ -1,0 +1,45 @@
+// Override variables here
+// You can add new ones or update existing ones:
+
+// $blue: #72d0eb; // Update blue
+// $pink: #ffb3b3; // Add pink
+// $family-serif: "Georgia", serif; // Add a serif family
+
+@import "./variables.scss";
+@import "~bulma";
+
+.header-tab {
+  color: #fff;
+
+  &.is-active, &:hover {
+    color: rgba( $dark, 0.5 );
+    border-color: rgba( $dark, 0.5 );
+  }
+}
+
+.header-item {
+  strong {
+    color: rgba( $dark, 0.5 );
+  }
+}
+
+.button.is-semi-dark {
+  background: rgba( $dark, 0.1 );
+  color: $dark-invert;
+  border-color: transparent;
+
+  &:hover {
+    background: rgba( $dark, 0.25 );
+    color: $dark-invert;
+    border-color: transparent;
+  }
+
+  &.is-loading {
+    color: transparent;
+
+    &:after {
+      border-left-color: $dark-invert;
+      border-bottom-color: $dark-invert;
+    }
+  }
+}

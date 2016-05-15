@@ -1,0 +1,10 @@
+@import "../../theme/variables.scss";
+
+.humility {
+  color: rgba( $dark-invert, 0.75 );
+  line-height: 40px;
+
+  a {
+    color: rgba( $dark, 0.5 );
+  }
+}
