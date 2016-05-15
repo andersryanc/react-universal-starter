@@ -1,13 +1,6 @@
-# React Redux Universal Hot Example
+# RRUSK - React Redux Universal Starter Kit
 
-[![build status](https://img.shields.io/travis/erikras/react-redux-universal-hot-example/master.svg?style=flat-square)](https://travis-ci.org/erikras/react-redux-universal-hot-example)
-[![Dependency Status](https://david-dm.org/erikras/react-redux-universal-hot-example.svg?style=flat-square)](https://david-dm.org/erikras/react-redux-universal-hot-example)
-[![devDependency Status](https://david-dm.org/erikras/react-redux-universal-hot-example/dev-status.svg?style=flat-square)](https://david-dm.org/erikras/react-redux-universal-hot-example#info=devDependencies)
-[![react-redux-universal channel on discord](https://img.shields.io/badge/discord-react--redux--universal%40reactiflux-brightgreen.svg?style=flat-square)](https://discord.gg/0ZcbPKXt5bZZb1Ko)
-[![Demo on Heroku](https://img.shields.io/badge/demo-heroku-brightgreen.svg?style=flat-square)](https://react-redux.herokuapp.com)
-[![PayPal donate button](https://img.shields.io/badge/donate-paypal-brightgreen.svg?style=flat-square)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E2LK57ZQ9YRMN)
-
----
+I originally cloned this repo from [@erikras](https://github.com/erikras/react-redux-universal-hot-example). I've since ripped out [Bootstrap](http://getbootstrap.com/) and replaced it with [Bulma](http://bulma.io/). I also added in [Mongoose](http://mongoosejs.com/) / [MongoDB](https://www.mongodb.com/) to handle data storage on the server.
 
 ## About
 
@@ -30,7 +23,7 @@ This is a starter boilerplate app I've put together using the following technolo
 * [lru-memoize](https://github.com/erikras/lru-memoize) to speed up form validation
 * [multireducer](https://github.com/erikras/multireducer) to combine single reducers into one key-based reducer
 * [style-loader](https://github.com/webpack/style-loader), [sass-loader](https://github.com/jtangelder/sass-loader) and [less-loader](https://github.com/webpack/less-loader) to allow import of stylesheets in plain css, sass and less,
-* [bootstrap-sass-loader](https://github.com/shakacode/bootstrap-sass-loader) and [font-awesome-webpack](https://github.com/gowravshekar/font-awesome-webpack) to customize Bootstrap and FontAwesome
+* ~~[bootstrap-sass-loader](https://github.com/shakacode/bootstrap-sass-loader)~~ and [font-awesome-webpack](https://github.com/gowravshekar/font-awesome-webpack) to customize ~~Bootstrap and~~ FontAwesome
 * [react-helmet](https://github.com/nfl/react-helmet) to manage title and meta tag information on both server and client
 * [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) to allow require() work for statics both on client and server
 * [mocha](https://mochajs.org/) to allow writing unit tests for the project.
@@ -59,7 +52,7 @@ The first time it may take a little while to generate the first `webpack-assets.
 - <kbd>CTRL</kbd>+<kbd>Q</kbd> Move DevTools Dock Position
 - see [redux-devtools-dock-monitor](https://github.com/gaearon/redux-devtools-dock-monitor) for more detailed information.
 
-If you have the 
+If you have the
 [Redux DevTools chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) installed it will automatically be used on the client-side instead.
 
 If you want to disable the dev tools during development, set `__DEVTOOLS__` to `false` in `/webpack/dev.config.js`.  
@@ -74,7 +67,7 @@ npm run start
 
 ## Demo
 
-A demonstration of this app can be seen [running on heroku](https://react-redux.herokuapp.com), which is a deployment of the [heroku branch](https://github.com/erikras/react-redux-universal-hot-example/tree/heroku).
+~~A demonstration of this app can be seen [running on heroku](https://react-redux.herokuapp.com), which is a deployment of the [heroku branch](https://github.com/erikras/react-redux-universal-hot-example/tree/heroku).~~
 
 ## Documentation
 
@@ -199,7 +192,7 @@ require('aModule/dist/style.css');
 ...
 ```
 
-**NOTE** In order to use this method with **scss or less** files one more modification must be made. In both `dev.config.js` and `prod.config.js` in the loaders for less and scss files remove 
+**NOTE** In order to use this method with **scss or less** files one more modification must be made. In both `dev.config.js` and `prod.config.js` in the loaders for less and scss files remove
 
 1. `modules`
 2. `localIdentName...`
@@ -240,18 +233,18 @@ The first deploy might take a while, but after that your `node_modules` dir shou
 This project moves fast and has an active community, so if you have a question that is not answered below please visit our [Discord channel](https://discord.gg/0ZcbPKXt5bZZb1Ko) or file an issue.
 
 
-## Roadmap 
+## Roadmap
 
-Although this isn't a library, we recently started versioning to make it easier to track breaking changes and emerging best practices. 
+Although this isn't a library, we recently started versioning to make it easier to track breaking changes and emerging best practices.
 
 * [Inline Styles](docs/InlineStyles.md) - CSS is dead
 
 ## Contributing
 
-I am more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :) 
+I am more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :)
 
-If you would like to submit a pull request, please make an effort to follow the guide in [CONTRIBUTING.md](CONTRIBUTING.md). 
- 
+If you would like to submit a pull request, please make an effort to follow the guide in [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ---
 Thanks for checking this out.
 
